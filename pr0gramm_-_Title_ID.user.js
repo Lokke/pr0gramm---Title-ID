@@ -14,7 +14,6 @@
     var old = p.currentView.showItem;
     p.currentView.showItem = function($item, scrollTo) {
         var res = old.apply(p.currentView, [$item, scrollTo]);
-        console.log(this.currentItemId);
         changeTitle(this.currentItemId);
         return res;
     }
